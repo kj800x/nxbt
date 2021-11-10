@@ -316,7 +316,6 @@ def list_switch_addresses():
 
 
 def main():
-
     if args.command == 'webapp':
         from .web import start_web_app
         start_web_app(ip=args.ip, port=args.port,
@@ -337,3 +336,6 @@ def main():
         list_switch_addresses()
     elif args.command == 'test':
         test()
+
+if __name__ == '__main__':
+    main()
